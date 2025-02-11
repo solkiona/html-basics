@@ -6,19 +6,35 @@
         <link rel="" href="">
         <script>
         </script>
+
+        <style>
+            table{
+                border: 1px solid black;
+                text-align: left;
+                border-collapse: collapse;
+                margin: 20px 0px;
+            }
+          th,td{
+               border: 1px solid black;
+                padding: 10px;
+            }
+        </style>
     </head>
     <body>
 
         <nav>
-            <a>Home</a>
-            <a>About</a>
-            <a>Contact</a>
-            <a>Blog</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="portfolio.html">Portfolio</a>
+
         </nav>
 
         <main>
             <h3>Welcome to Araura's Collections</h3>
             <p>we offer the best collections of italian shoes</p>
+            <link rel="stylesheet" href="">
             <img src="italian_shoes.png" alt="italian shoes"/>
 
             <h4> Products </h4>
@@ -35,21 +51,32 @@
             &copy; copyright solomon 2025
         </footer>
 
+        <table>
+            <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Email</th>
+            </tr>
+            <tr>
+            <td>Richard</td>
+            <td>No. 1 Uwalaka Street</td>
+            <td>08104929291</td>
+            <td>richard@example.com</td>
+            </tr>
+            <tr>
+                <td>Emeka</td>
+                <td>No. 1 Lagos Street</td>
+                <td>08104929981</td>
+                <td>emeka@example.com</td>
+                </tr>
+            
+            </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <video width="400" controls>
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+            
         <h1>Heading One</h1>
         <h2>Heading Two</h2>
         <h3>Heading Three</h3>
@@ -76,6 +103,12 @@
             <li>Data Science</li>
             <li>Web Design</li>
         </ol>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>HypterText Markup Language</dd>
+            <dd>HTML attributes</dd>
+        </dl>
         <a href="index.html"> Home </a> <a href="about.html"> About </a>
         <img src="image_1.png"
         width="300px"
@@ -88,27 +121,36 @@
         <br>
         <hr>
         Odit possimus expedita at, harum labore est provident ullam dicta quam tempora eveniet culpa, in ab dignissimos velit assumenda necessitatibus vero magni?</p>
-     <form action="" method="POST">
 
-    <label>Full Name:</label>
-    <input type="text" > <br>
-    <label>Email:</label>
-    <input type="email"><br>
-    <label>Password:</label>
-    <input type="password">
-    <br>
-    <input type="submit" value="submit">
+       
+     <form action="" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text"  id="name" name="name"> <br>
+        <label for="email" >Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="submit" value="submit">
 
      </form>
 
+
      <form>
-        <input type="radio" value="Gucci" >
-        <select>
-            <option>
-                Gucci
+
+        <label for="gucci"> <input type="radio" value="Gucci" name="product" id="gucci">Gucci</label>
+        <label for="nikes"> <input type="radio" value="Nikes" name="product" id="nikes" >Nikes</label>
+        
+        <label for="country">Choos a Country</label>
+        <select id="country">
+            <option value="ng">
+                Nigeria
             </option>
-            <option>
-                Addidas
+            <option value="gh">
+                Ghana
+            </option>
+            <option value="za">
+                South Africa
             </option>
         </select>
         <label>Name</label>
@@ -116,14 +158,14 @@
 
         Suggest ways to improve our website
         <label>Comment</label>
-        <textarea>
-            Leave a comment
+        <textarea cols="50" rows="10">
+            
         </textarea>
-        
-        <input type="submit" value="">
+
+        <input type="submit" value="Submit">
 
      </form>
-    
+
     
 
     </body>
