@@ -1,0 +1,105 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+}
+#main{
+    background-color: #05b695;
+    height: 100vh;
+    position: relative;
+
+}
+
+.form_container{
+    background-color: white;
+    width: 320px;
+    /* height: 500px; */
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#form_main{
+    /* border: 2px solid yellow; */
+    height: 380px;
+    box-sizing: border-box;
+}
+
+#form_body{
+    /* border: 2px solid yellow; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    
+}
+
+.h2_div{
+    /* border: 2px solid red; */
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #046e5a;
+    color: white;
+}
+
+
+input {
+    display: block;
+    margin: 20px;
+    border: 1px solid rgb(184, 182, 182);
+    width: 87%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    padding-left: 50px;
+}
+
+input:focus{
+    outline: 1px solid grey;
+}
+
+.p_email, .p_pwd{
+    /* border: 1px solid magenta; */
+    position: relative;
+
+}
+
+.fa-user, .fa-lock {
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    /* border: 1px solid green;             */
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    background:#046e5a;
+}
+.f_pwd{
+    text-decoration: none;
+    color:#046e5a;
+    margin: 20px;
+    margin-top: -10px;
+    /* border: 1px solid red; */
+    display: block;
+}
+
+#submit {
+    padding-left: 0px;
+    background-color: #046e5a;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
